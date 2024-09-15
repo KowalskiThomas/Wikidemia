@@ -11,7 +11,8 @@ struct ScrumdingerApp: App {
     var body: some Scene {
         WindowGroup {
             // ScrumsView(scrums: $scrums)
-            UploadFileView()
+            // UploadFileView()
+            LoginView()
         }
     }
 }

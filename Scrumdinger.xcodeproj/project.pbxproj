@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		001C9EE22C94AE950096291D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C9EE12C94AE950096291D /* LoginView.swift */; };
+		001C9EE42C94D54B0096291D /* EntitySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C9EE32C94D54B0096291D /* EntitySearchView.swift */; };
+		001C9EE62C94D6250096291D /* EntitiesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C9EE52C94D6250096291D /* EntitiesListView.swift */; };
 		0042D6F82C88F99F00091CF7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042D6F72C88F99F00091CF7 /* Theme.swift */; };
 		0042D6FA2C88F9CC00091CF7 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042D6F92C88F9CC00091CF7 /* DailyScrum.swift */; };
 		0042D6FE2C88FA3700091CF7 /* CardVie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042D6FD2C88FA3700091CF7 /* CardVie.swift */; };
@@ -21,6 +24,7 @@
 		0042D7102C8E0EB400091CF7 /* CategorySearchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042D70F2C8E0EB400091CF7 /* CategorySearchingView.swift */; };
 		0042D7122C8E47D500091CF7 /* CategoriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042D7112C8E47D500091CF7 /* CategoriesList.swift */; };
 		0042D7142C8E485B00091CF7 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042D7132C8E485B00091CF7 /* PhotoPicker.swift */; };
+		00B3DDCF2C958494000DD763 /* DoUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B3DDCE2C958494000DD763 /* DoUploadView.swift */; };
 		AAAE8020294793AB0099DABC /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAE801F294793AB0099DABC /* ScrumdingerApp.swift */; };
 		AAAE8022294793AB0099DABC /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAE8021294793AB0099DABC /* MeetingView.swift */; };
 		AAAE8024294793AB0099DABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAE8023294793AB0099DABC /* Assets.xcassets */; };
@@ -29,6 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		001C9EE12C94AE950096291D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		001C9EE32C94D54B0096291D /* EntitySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitySearchView.swift; sourceTree = "<group>"; };
+		001C9EE52C94D6250096291D /* EntitiesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitiesListView.swift; sourceTree = "<group>"; };
 		0042D6F72C88F99F00091CF7 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		0042D6F92C88F9CC00091CF7 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		0042D6FD2C88FA3700091CF7 /* CardVie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardVie.swift; sourceTree = "<group>"; };
@@ -43,6 +50,7 @@
 		0042D70F2C8E0EB400091CF7 /* CategorySearchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySearchingView.swift; sourceTree = "<group>"; };
 		0042D7112C8E47D500091CF7 /* CategoriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesList.swift; sourceTree = "<group>"; };
 		0042D7132C8E485B00091CF7 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		00B3DDCE2C958494000DD763 /* DoUploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoUploadView.swift; sourceTree = "<group>"; };
 		AAAE801C294793AB0099DABC /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAE801F294793AB0099DABC /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
 		AAAE8021294793AB0099DABC /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
@@ -112,6 +120,10 @@
 				0042D70F2C8E0EB400091CF7 /* CategorySearchingView.swift */,
 				0042D7112C8E47D500091CF7 /* CategoriesList.swift */,
 				0042D7132C8E485B00091CF7 /* PhotoPicker.swift */,
+				001C9EE12C94AE950096291D /* LoginView.swift */,
+				001C9EE32C94D54B0096291D /* EntitySearchView.swift */,
+				001C9EE52C94D6250096291D /* EntitiesListView.swift */,
+				00B3DDCE2C958494000DD763 /* DoUploadView.swift */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -203,16 +215,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B3DDCF2C958494000DD763 /* DoUploadView.swift in Sources */,
 				0042D7122C8E47D500091CF7 /* CategoriesList.swift in Sources */,
 				0042D70C2C890EF700091CF7 /* NetworkManager.swift in Sources */,
 				0042D70E2C8BC37100091CF7 /* CategorySearchView.swift in Sources */,
 				0042D70A2C8909C700091CF7 /* ThemePicker.swift in Sources */,
 				0042D7142C8E485B00091CF7 /* PhotoPicker.swift in Sources */,
+				001C9EE42C94D54B0096291D /* EntitySearchView.swift in Sources */,
 				0042D6FA2C88F9CC00091CF7 /* DailyScrum.swift in Sources */,
 				0042D7042C88FDF700091CF7 /* DetailView.swift in Sources */,
 				0042D7062C8901FE00091CF7 /* DetailEditView.swift in Sources */,
 				0042D7002C88FB2500091CF7 /* TrailingIconLabelStyle.swift in Sources */,
 				0042D6F82C88F99F00091CF7 /* Theme.swift in Sources */,
+				001C9EE62C94D6250096291D /* EntitiesListView.swift in Sources */,
+				001C9EE22C94AE950096291D /* LoginView.swift in Sources */,
 				0042D7022C88FC7200091CF7 /* ScrumsView.swift in Sources */,
 				0042D6FE2C88FA3700091CF7 /* CardVie.swift in Sources */,
 				AAAE8022294793AB0099DABC /* MeetingView.swift in Sources */,

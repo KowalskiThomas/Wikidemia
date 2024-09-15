@@ -1,8 +1,16 @@
 import SwiftUI
 import PhotosUI
 
+enum ImageFormat {
+    case JPEG
+    case PNG
+    case Other
+    case Error
+}
+
 struct PhotoPicker: UIViewControllerRepresentable {
     @Binding var selectedImage: UIImage?
+    @Binding var selectedImageFormat: ImageFormat?
     let compressionQuality = CGFloat(0.8);
 
     class Coordinator: NSObject, PHPickerViewControllerDelegate {
@@ -16,6 +24,24 @@ struct PhotoPicker: UIViewControllerRepresentable {
             picker.dismiss(animated: true)
 
             guard let provider = results.first?.itemProvider, provider.canLoadObject(ofClass: UIImage.self) else { return }
+
+            provider.loadFileRepresentation(forTypeIdentifier: UTType.image.identifier) { url, error in
+                guard let url = url else {
+                    self.parent.selectedImageFormat = .Error
+                    return
+                }
+                
+                DispatchQueue.main.async {
+                    let urlString = url.standardizedFileURL.absoluteString.lowercased()
+                    if urlString.hasSuffix("jpeg") || urlString.hasSuffix("jpg") {
+                        self.parent.selectedImageFormat = .JPEG
+                    } else if urlString.hasSuffix("png") {
+                        self.parent.selectedImageFormat = .PNG
+                    } else {
+                        self.parent.selectedImageFormat = .Other
+                    }
+                }
+            }
 
             provider.loadObject(ofClass: UIImage.self) { image, error in
                 DispatchQueue.main.async {
